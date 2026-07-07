@@ -2056,7 +2056,7 @@ function drawPathTo(targetSeat, retry = 0) {
   // 把 stroke-dasharray 设成总路径长度（一整段实线），dashoffset 同长（整段藏在画面外），
   // 再 transition dashoffset → 0，实现"从起点画到终点"的渐进效果。
   // 动画结束后还原 dashed 虚线样式 + 让 pulse 流光继续跑。
-  const ANIM_MS = 700;
+  const ANIM_MS = 650;
   const drawPaths = svg.querySelectorAll('path');
   const drawLengths = Array.from(drawPaths).map(p => p.getTotalLength());
 
